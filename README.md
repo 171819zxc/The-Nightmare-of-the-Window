@@ -1,20 +1,15 @@
 # 恶搞程序-窗口的噩梦
 
-<img width="1920" height="1080" alt="{46E00E0F-0D53-4D44-888A-0733FFA1B46D}" src="https://github.com/user-attachments/assets/cb03be74-3d1d-4fbd-b51a-74349c924be4" />
-<img width="1920" height="1080" alt="{F0B16236-ACB5-4DAA-90E4-209C79DEC8CC}" src="https://github.com/user-attachments/assets/501544c6-26d3-4a18-9856-9030405c6478" />
-<img width="1920" height="1080" alt="{06303184-471F-4649-BB2D-C124A6DEAF89}" src="https://github.com/user-attachments/assets/82745f42-6188-416c-8184-800203257d9c" />
-<img width="1920" height="1080" alt="{6E9573E6-EA0F-4654-A85E-62A80A73D723}" src="https://github.com/user-attachments/assets/f4dae227-40e0-4f20-ae5b-6c397a736799" />
-<img width="1920" height="1080" alt="{B7615F28-D87E-4CCD-9015-822398162E00}" src="https://github.com/user-attachments/assets/8011072f-d755-4619-a578-57a9425a1c44" />
-<img width="1920" height="1080" alt="{97438662-0B38-4886-B116-A85344421EDC}" src="https://github.com/user-attachments/assets/a004b865-8724-4506-93c5-fc18ad5ad26e" />
-<img width="1920" height="1080" alt="{5E903CB5-EE79-44BE-827B-140B6308700D}" src="https://github.com/user-attachments/assets/6d1df503-616a-487b-8e86-d04ff8580ff4" />
+
 
 ## ⚠警告⚠
 - 本程序具有危险功能，建议在虚拟机内运行
 - 若因运行本程序所造成的一切损失均由运行者承担
 - 本程序仅供娱乐与研究，禁止用于破坏计算机
 - 破坏计算机均需负法律责任，编写此程序并非出于恶意目的
-- 程序具有一定破坏性，若要恶搞朋友，请先在虚拟机内熟悉运行效果
-- **程序仅供娱乐玩笑使用，禁止用来破坏他人计算机**
+- 程序具有一定破坏性，若要恶搞朋友，请先在虚拟机内熟悉运行效果，**仅使用【安全模式】**
+- **程序仅供娱乐玩笑使用，禁止用来破坏他人计算机，若要运行，必须经过机器主人的同意后再运行**
+- 危险模式的设计仅作为教育目的，学习Win32API以及函数的调用
 - 若你同意以上协议再执行本程序
 
 ## 灵感来源
@@ -43,12 +38,30 @@
  11. 选择"Enable dangerous mode"后则不能再选择安全/危险模式
 
 ## 运行效果
+- 查看附带图片
 - 无论以任何模式运行，均会显示最后的警告，并闪烁提醒
 - 运行后如果选择了危险模式，会疯狂让你的鼠标到处乱点、键盘从A-Z乱按，持续修改UTC时间，创建100个回收站，命名方式"Recycle bin" + n个零宽字符 + 回收站的CLSID
 - 程序运行完成后，还会判断当前是否为危险模式，如果是还会主动蓝屏"0xC0000005"(即STATUS_ACCESS_VIOLATION)，且设置为系统关键进程
 - 非危险模式程序正常退出，最好重启一下
 
+## 知识要点
+1. 学会多线程的创建与管理
+2. 学会使用Win32 Graphics Device Interface进行绘图
+3. 使用内存流播放ByteBeat
+4. 学会WinForm的基础控件
+
 ## 其他补充
 - 软件界面的文字由第三方软件翻译，有一些可能不标准，请谅解
 - 程序没有异常检测，大部分可以正常运行的
 - 新手写代码，可能写的不是很好，请原谅
+
+
+
+
+<img width="1920" height="1080" alt="{46E00E0F-0D53-4D44-888A-0733FFA1B46D}" src="https://github.com/user-attachments/assets/cb03be74-3d1d-4fbd-b51a-74349c924be4" />
+<img width="1920" height="1080" alt="{F0B16236-ACB5-4DAA-90E4-209C79DEC8CC}" src="https://github.com/user-attachments/assets/501544c6-26d3-4a18-9856-9030405c6478" />
+<img width="1920" height="1080" alt="{06303184-471F-4649-BB2D-C124A6DEAF89}" src="https://github.com/user-attachments/assets/82745f42-6188-416c-8184-800203257d9c" />
+<img width="1920" height="1080" alt="{6E9573E6-EA0F-4654-A85E-62A80A73D723}" src="https://github.com/user-attachments/assets/f4dae227-40e0-4f20-ae5b-6c397a736799" />
+<img width="1920" height="1080" alt="{B7615F28-D87E-4CCD-9015-822398162E00}" src="https://github.com/user-attachments/assets/8011072f-d755-4619-a578-57a9425a1c44" />
+<img width="1920" height="1080" alt="{97438662-0B38-4886-B116-A85344421EDC}" src="https://github.com/user-attachments/assets/a004b865-8724-4506-93c5-fc18ad5ad26e" />
+<img width="1920" height="1080" alt="{5E903CB5-EE79-44BE-827B-140B6308700D}" src="https://github.com/user-attachments/assets/6d1df503-616a-487b-8e86-d04ff8580ff4" />
